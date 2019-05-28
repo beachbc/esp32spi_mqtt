@@ -91,7 +91,8 @@ class MQTTClientSimple:
         self.lw_retain = retain
 
     def connect(self, clean_session=True):
-        self.sock = socket.socket()
+        if not self.sock:
+            self.sock = socket.socket()
         addr = socket.getaddrinfo(self.server, self.port)[0][-1]
         self.sock.settimeout(10)
         self.sock.connect(addr, conntype=TCP_MODE)
