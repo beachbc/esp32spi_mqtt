@@ -1,3 +1,5 @@
+Adafruit added a mqtt library! You should use that: https://github.com/adafruit/Adafruit_CircuitPython_MiniMQTT
+
 # esp32spi_mqtt
 
 This mqtt client is an adaptation of Paul Sokolovsky's umqtt library for micropython available at https://github.com/micropython/micropython-lib to make it compatible with Adafruit's CircuitPython adafruit_esp32spi library https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI.
